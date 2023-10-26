@@ -160,5 +160,4 @@ cython_debug/
 #.idea/
 
 # Custom
-./data/Raw
-README.md
+data/
