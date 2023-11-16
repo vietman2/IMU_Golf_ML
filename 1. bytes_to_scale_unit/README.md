@@ -1,6 +1,8 @@
 
 # IMU Data Conversion Module
 
+## 데이터 파악하는 과정
+
 Bytes단위로 주어진 IMU 센서의 Raw Data를 수치 값으로 변경하는 유닛.
 
 Accelerometer값은 g-force로
