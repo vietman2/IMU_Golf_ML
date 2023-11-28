@@ -13,7 +13,7 @@ def preprocess_single_file(input_file_path, output_file_path):
 
     # Load CSV data and filter rows where Swing Stage is not 0 (swing stage != 0, 3 fltrd_accel, 3 fltrd_gyro)
     input_data = pd.read_csv(input_file_path)
-    # input_data = input_data[input_data.iloc[:, 3] != 0]
+    input_data = input_data[input_data.iloc[:, 3] != 0]
     input_data = input_data.iloc[:, [3, 19, 20, 21, 25, 26, 27]]
 
     X = np.array(input_data.values)
@@ -30,7 +30,6 @@ def preprocess_single_file(input_file_path, output_file_path):
 
 def preprocess_all_files():
     
-    # Consolidated Data from All Files
     all_data = []
 
     # Iterate through all files
