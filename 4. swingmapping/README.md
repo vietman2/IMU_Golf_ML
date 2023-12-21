@@ -1,4 +1,3 @@
-#
 # Shot Result Mapping Module
 
 ## Overview
